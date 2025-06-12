@@ -23,8 +23,8 @@ NFSeSigner é uma aplicação em Python para assinatura digital de arquivos XML 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/NFSeSigner.git
-   cd NFSeSigner
+   git clone https://github.com/guilerm3/pfxtoxml.git
+   cd pfxtoxml
    ```
 
 2. Crie e ative um ambiente virtual:
