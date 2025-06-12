@@ -63,7 +63,7 @@ senha_pfx = b"SuaSenhaAqui"
 3. Execute o script:
 
 ```bash
-python assinar_nfse.py
+python pfxtoxml.py
 ```
 
 4. O XML assinado será exibido no terminal. Você pode salvar em arquivo, se desejar:
