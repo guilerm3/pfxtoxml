@@ -35,52 +35,42 @@ NFSeSigner é uma aplicação em Python para assinatura digital de arquivos XML 
    source .venv/bin/activate  # Linux/macOS
    ```
 
-3. Instale as dependências:
+3. Instale as dependências manualmente (caso não tenha `requirements.txt`):
 
    ```bash
-   pip install -r requirements.txt
+   pip install cryptography lxml xmlsec
    ```
-
-### Exemplo do arquivo `requirements.txt`:
-
-```
-cryptography
-lxml
-xmlsec
-```
 
 ## 🚀 Como Usar
 
 1. Altere o caminho e a senha do seu certificado `.pfx` nas variáveis:
 
-```python
-caminho_pfx = r"C:\caminho\para\seu_certificado.pfx"
-senha_pfx = b"SuaSenhaAqui"
-```
+   ```python
+   caminho_pfx = r"C:\caminho\para\seu_certificado.pfx"
+   senha_pfx = b"SuaSenhaAqui"
+   ```
 
 2. Insira seu XML conforme o layout da ABRASF dentro da variável `xml_para_assinar`.
 
-3. Execute o script:
+3. Execute o script principal:
 
-```bash
-python pfxtoxml.py
-```
+   ```bash
+   python pfxtoxml.py
+   ```
 
-4. O XML assinado será exibido no terminal. Você pode salvar em arquivo, se desejar:
+4. O XML assinado será exibido no terminal. Você pode salvá-lo em um arquivo:
 
-```python
-with open("nfse_assinada.xml", "w", encoding="utf-8") as f:
-    f.write(xml_assinado_final)
-```
+   ```python
+   with open("nfse_assinada.xml", "w", encoding="utf-8") as f:
+       f.write(xml_assinado_final)
+   ```
 
 ## 📂 Estrutura do Projeto
 
 ```
-NFSeSigner/
-│
-├── assinar_nfse.py         # Script principal de assinatura
-├── requirements.txt        # Dependências do projeto
-└── README.md               # Este arquivo
+pfxtoxml/
+├── pfxtoxml.py           # Script principal de assinatura
+└── README.md             # Este arquivo
 ```
 
 ## 🧪 Testado com
